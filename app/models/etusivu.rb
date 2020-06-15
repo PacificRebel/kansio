@@ -1,0 +1,2 @@
+class Etusivu < ApplicationRecord
+end
