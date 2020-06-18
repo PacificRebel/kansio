@@ -12,6 +12,7 @@ body {
   font-family: "Courier New", Courier, monospace, sans-serif;
 }
 
+/* START OF HEADER SECTION: */
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
@@ -60,22 +61,18 @@ body {
     float: none;
   }
 }
+/* END OF HEADER SECTION */
 
-.item1 { grid-area: left; }
-.item2 { grid-area: centre; }
-.item3 { grid-area: right; }
-
-.grid-container{
-  display: grid;
-  grid-template-areas:
-  'left centre right';
-  grid-gap: 10px;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px 0;
 }
 
-.grid-container > div {
+.container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
 }
 </style>
@@ -95,8 +92,9 @@ body {
   <h2>Projects / Projektit</h2>
   <p>Content</p>
   <p>More content..</p>
+  </div>
 
-<div class="grid-container">
+<div class="container">
   <div class="row">
     <div class="left">
       <center>
@@ -139,6 +137,52 @@ body {
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="left">
+      <center>
+    <div class="col-sm-6">
+      <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <a href="#" class="btn btn-primary">Go somewhere</a>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <div class="centre">
+    <center>
+  <div class="col-sm-6">
+<div class="card">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+
+  <div class="right">
+    <center>
+  <div class="col-sm-6">
+<div class="card">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
 </div>
 </div>
