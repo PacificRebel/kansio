@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <style>
@@ -76,6 +76,36 @@ body {
   text-align: center;
   font-size: 30px;
 }
+
+.typewriter {
+      font-family: monospace;/* Web-safe typewriter-like font */
+      overflow: hidden;/* Ensures the content is not revealed until the animation */
+      border-right: .17em solid black;/* The typewriter cursor */
+      white-space: nowrap;/* Keeps the content on a single line */
+      margin: 0 auto;/* Gives that scrolling effect as the typing happens */
+      letter-spacing: .17em;/* Adjust as needed */
+      animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+    }
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0
+      }
+      to {
+        width: 100%
+      }
+    }
+    /* The typewriter cursor effect */
+    @keyframes blinking-cursor {
+      from,
+      to {
+        border-color: transparent
+      }
+      50% {
+        border-color: black;
+      }
+    }
+
 </style>
 </head>
 
@@ -89,10 +119,11 @@ body {
   </div>
 </div>
 
-<div style="padding-left:20px">
-  <br>
-  <h2>Projects / Projektit</h2>
-
+  <div class="typewriter">
+      <div style="padding-left:20px">
+      <br>
+      <h2>Projects / Projektit</h2>
+    </div>
   </div>
 
 <div class="container">
@@ -103,7 +134,7 @@ body {
       <div class="card bg-info">
       <img src="/kuja.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">Project 1</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <!-- <a href="#" class="btn btn-info">Open project</a> -->
       <button type="button" class="btn btn-light">Open project</button>
