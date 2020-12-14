@@ -3,6 +3,7 @@
 Rails project, trying out a portfolio with cards for each project, scrolling test  
 across the top, and images added to cards.
 
+
 <img src="/public/Kansio_screen_recording.gif"/>
 
 # README
